@@ -1,0 +1,48 @@
+.IntroScene {
+  width: 200vh;
+  height: 100vh;
+
+  background: rgb(3, 0, 0);
+  background: -moz-linear-gradient(
+    140deg,
+    rgba(3, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    140deg,
+    rgba(3, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    140deg,
+    rgba(3, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030000",endColorstr="#000000",GradientType=1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 4s;
+
+  position: absolute;
+  z-index: 2;
+}
+
+.IntroScene_finished {
+  opacity: 0 !important;
+}
+
+@media screen and (min-width: 700px) {
+  .IntroScene video {
+    height: 55vh;
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .IntroScene video {
+    height: 75vh;
+    width: 75vw;
+  }
+}
