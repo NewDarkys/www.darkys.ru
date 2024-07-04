@@ -23,6 +23,7 @@
   justify-content: center;
   flex-direction: column;
   z-index: 3;
+  transition: 0.25s;
 }
 
 .LoginLogo {
@@ -31,7 +32,7 @@
 }
 
 .hidden {
-  display: none;
+  opacity: 0 !important;
 }
 
 .LoginLogoText {

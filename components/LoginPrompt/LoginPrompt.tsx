@@ -1,5 +1,6 @@
 "use client";
 import "./LoginPrompt.css";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 interface LoginPromptProps {
@@ -8,17 +9,39 @@ interface LoginPromptProps {
 
 const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
   const Tag = tag || "div";
+
   let UsernameCounter = 0;
   let PasswordCounter = 0;
 
   let Username = "Guest";
   let Password = "******";
 
+  let startedLogging: boolean;
+
   function checkInput() {
+    const Self = document.querySelector<HTMLDivElement>(".LoginPrompt");
+    const video = document.querySelector<HTMLVideoElement>(".IntroVideo");
     if (
+      !startedLogging &&
       UsernameCounter >= Username.length &&
-      PasswordCounter >= Password.length
+      PasswordCounter >= Password.length &&
+      Self
     ) {
+      startedLogging = true;
+      Self.classList.add("hidden");
+      const timer = setTimeout(() => {
+        if (video) {
+          video.play();
+          const elem = document.querySelector(".IntroScene");
+          console.log("11");
+          video.addEventListener("ended", (event) => {
+            if (elem) {
+              elem.classList.add("IntroScene_finished");
+            }
+          });
+        }
+      }, 3000);
+      return () => clearTimeout(timer);
     }
   }
 
@@ -47,6 +70,7 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
         className="LoginLogo"
         width="150"
         height="150"
+        priority={true}
       />
       <span className="LoginLogoText">Login to 7EYES System Center (SSC)</span>
       <div className="loginForm">
