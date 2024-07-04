@@ -1,6 +1,5 @@
 "use client";
 import "./LoginPrompt.css";
-import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 interface LoginPromptProps {
@@ -30,12 +29,14 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
       startedLogging = true;
       Self.classList.add("hidden");
       if (video) {
-        const elem = document.querySelector(".IntroScene");
+        const IntroScene = document.querySelector(".IntroScene");
+        const AmbientAudio = document.querySelector(".AmbientAudio");
         video.play();
         video.addEventListener("ended", (event) => {
-          if (elem) {
-            elem.classList.add("IntroScene_finished");
+          if (IntroScene && AmbientAudio) {
+            IntroScene.classList.add("IntroScene_finished");
             video.classList.add("IntroScene_finished");
+            AmbientAudio.play();
           }
         });
       }

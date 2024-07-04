@@ -25,6 +25,7 @@ const VFX: React.FC<VFX> = ({ tag }) => {
   });
   return (
     <Tag className="VFX">
+      <audio src="Ambient.mp3" className="AmbientAudio"></audio>
       <div className="acryl"></div>
       <img src="beam.png" className="effect"></img>
     </Tag>
