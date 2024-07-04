@@ -47,7 +47,10 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
   function onUsernameInput(e: any) {
     UsernameCounter += 1;
     e.target.value = Username.substring(0, UsernameCounter);
-    if (UsernameCounter >= Username.length) {
+    if (
+      UsernameCounter >= Username.length &&
+      PasswordCounter < Password.length
+    ) {
       let elem = document.querySelector<HTMLInputElement>(".passwordInput");
       if (elem) {
         elem.focus();
@@ -58,6 +61,15 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
   function onPasswordInput(e: any) {
     PasswordCounter += 1;
     e.target.value = Password.substring(0, PasswordCounter);
+    if (
+      PasswordCounter >= Password.length &&
+      UsernameCounter < Username.length
+    ) {
+      let elem = document.querySelector<HTMLInputElement>(".usernameInput");
+      if (elem) {
+        elem.focus();
+      }
+    }
     checkInput();
   }
 
