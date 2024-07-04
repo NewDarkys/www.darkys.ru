@@ -13,7 +13,11 @@ const IntroScene: React.FC<IntroSceneProps> = ({ tag, video_src }) => {
 
   function SkipIntro() {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 5.0;
+      videoRef.current.playbackRate = 3.0;
+      let SkipIntro = document.querySelector(".SkipIntro");
+      if (SkipIntro) {
+        SkipIntro.classList.add("hidden");
+      }
     }
   }
 
@@ -26,7 +30,7 @@ const IntroScene: React.FC<IntroSceneProps> = ({ tag, video_src }) => {
         controls={false}
       ></video>
       <button className="SkipIntro" onClick={SkipIntro}>
-        Skip intro. . .
+        Skip intro
       </button>
     </Tag>
   );

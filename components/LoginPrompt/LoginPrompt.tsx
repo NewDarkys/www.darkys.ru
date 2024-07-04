@@ -35,6 +35,7 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
         video.addEventListener("ended", (event) => {
           if (elem) {
             elem.classList.add("IntroScene_finished");
+            video.classList.add("IntroScene_finished");
           }
         });
       }
