@@ -29,19 +29,15 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
     ) {
       startedLogging = true;
       Self.classList.add("hidden");
-      const timer = setTimeout(() => {
-        if (video) {
-          video.play();
-          const elem = document.querySelector(".IntroScene");
-          console.log("11");
-          video.addEventListener("ended", (event) => {
-            if (elem) {
-              elem.classList.add("IntroScene_finished");
-            }
-          });
-        }
-      }, 3000);
-      return () => clearTimeout(timer);
+      if (video) {
+        const elem = document.querySelector(".IntroScene");
+        video.play();
+        video.addEventListener("ended", (event) => {
+          if (elem) {
+            elem.classList.add("IntroScene_finished");
+          }
+        });
+      }
     }
   }
 

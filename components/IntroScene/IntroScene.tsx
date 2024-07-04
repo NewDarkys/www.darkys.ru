@@ -11,6 +11,12 @@ const IntroScene: React.FC<IntroSceneProps> = ({ tag, video_src }) => {
   const Tag = tag || "div";
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  function SkipIntro() {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 5.0;
+    }
+  }
+
   return (
     <Tag className="IntroScene">
       <video
@@ -19,6 +25,9 @@ const IntroScene: React.FC<IntroSceneProps> = ({ tag, video_src }) => {
         src={video_src}
         controls={false}
       ></video>
+      <button className="SkipIntro" onClick={SkipIntro}>
+        Skip intro. . .
+      </button>
     </Tag>
   );
 };

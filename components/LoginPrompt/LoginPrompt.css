@@ -1,5 +1,5 @@
 .LoginPrompt {
-  width: 200vh;
+  width: 100vw;
   height: 100vh;
   background: rgb(3, 0, 0);
   background: -moz-linear-gradient(
@@ -23,7 +23,7 @@
   justify-content: center;
   flex-direction: column;
   z-index: 3;
-  transition: 0.25s;
+  transition: opacity 0.25s;
 }
 
 .LoginLogo {

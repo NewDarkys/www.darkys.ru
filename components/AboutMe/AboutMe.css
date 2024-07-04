@@ -1,0 +1,29 @@
+.AboutMe {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+}
+.animated-gradient-black-red {
+  background: rgb(3, 0, 0);
+  background: -moz-linear-gradient(
+    140deg,
+    rgba(3, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    140deg,
+    rgba(3, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    140deg,
+    rgba(3, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030000",endColorstr="#000000",GradientType=1);
+}
+.AlertSpan {
+  margin: 50px;
+  display: inline-block;
+}
