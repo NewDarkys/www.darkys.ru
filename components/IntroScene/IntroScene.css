@@ -31,6 +31,8 @@
   .IntroScene video {
     height: 55vh;
     width: 55vw;
+  }
+  .SkipIntro {
     margin-top: 700px;
   }
 }
@@ -39,6 +41,8 @@
   .IntroScene video {
     height: 75vh;
     width: 75vw;
+  }
+  .SkipIntro {
     margin-top: 500px;
   }
 }
