@@ -30,7 +30,8 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
       Self.classList.add("hidden");
       if (video) {
         const IntroScene = document.querySelector(".IntroScene");
-        const AmbientAudio = document.querySelector(".AmbientAudio");
+        const AmbientAudio =
+          document.querySelector<HTMLAudioElement>(".AmbientAudio");
         video.play();
         video.addEventListener("ended", (event) => {
           if (IntroScene && AmbientAudio) {
