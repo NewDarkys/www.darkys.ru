@@ -10,22 +10,23 @@ interface VFX {
 const VFX: React.FC<VFX> = ({ tag }) => {
   const Tag = tag || "div";
   useEffect(() => {
-    (function me() {
-      var elem = document.querySelector<HTMLImageElement>(".acryl");
-      let windowMaxHeight = document.documentElement.clientHeight;
+    let windowMaxHeight = document.documentElement.clientHeight;
+    var elem = document.querySelector<HTMLImageElement>(".acryl")!;
+    function me() {
       for (let i = -50; i < windowMaxHeight + 10; i++) {
         setTimeout(() => {
-          if (elem) {
-            elem.style.marginTop = `${i}px`;
-          }
+          elem.style.marginTop = `${i}px`;
         }, 5 * i);
       }
-      setTimeout(me, (windowMaxHeight + 10) * 5);
-    })();
+      return;
+    }
+    me();
+    setInterval(me, (windowMaxHeight + 10) * 5.01);
   });
   return (
     <Tag className="VFX">
       <audio src="Ambient.mp3" className="AmbientAudio"></audio>
+      <audio src="server.mp3" className="serverAudio"></audio>
       <div className="acryl"></div>
       <Image
         src="/beam.png"

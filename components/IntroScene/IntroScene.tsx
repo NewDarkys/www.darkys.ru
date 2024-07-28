@@ -9,15 +9,15 @@ interface IntroSceneProps {
 
 const IntroScene: React.FC<IntroSceneProps> = ({ tag, video_src }) => {
   const Tag = tag || "div";
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null)!;
 
   function SkipIntro() {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 3.0;
-      let SkipIntro = document.querySelector(".SkipIntro");
-      if (SkipIntro) {
-        SkipIntro.classList.add("hidden");
-      }
+    let v = videoRef.current!;
+    v.playbackRate = 10.0;
+
+    let SkipIntro = document.querySelector(".SkipIntro");
+    if (SkipIntro) {
+      SkipIntro.classList.add("hidden");
     }
   }
 

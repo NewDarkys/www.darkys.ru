@@ -11,10 +11,22 @@ const AboutMe: React.FC<AboutMe> = ({ tag }) => {
 
   return (
     <Tag className="AboutMe animated-gradient-black-red">
-      <span className="AlertSpan">
-        Hello! This page is under development. More will be in the near future!{" "}
-        <br></br>- Darkys
-      </span>
+      <div className="anketa-container">
+        <span className="about_text dpN"> 123</span>
+        <div className="anketa">
+          <Image
+            src={`/LoginLogo.png`}
+            alt="7EYES-Logo"
+            className="Logo"
+            width="150"
+            height="150"
+            priority={true}
+          ></Image>
+          <span className="StorySpan">
+            <div className="SpanFiller" id="typewriter"></div>
+          </span>
+        </div>
+      </div>
     </Tag>
   );
 };
