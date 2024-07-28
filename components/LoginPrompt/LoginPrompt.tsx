@@ -146,7 +146,7 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
           serverAudio.play();
         }
         let isWaypointReached = false;
-        function finish_anketa() {
+        function finish_anketa(this: HTMLAudioElement) {
           if (!isWaypointReached && this.currentTime >= 25.7) {
             isWaypointReached = true;
             anketa_container.classList.add("op0");
