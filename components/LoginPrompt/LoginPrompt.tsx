@@ -68,7 +68,7 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
 
   function Tell(app: any) {
     var typewriterNew = new Typewriter(app, {
-      delay: 15,
+      delay: 5,
       cursor: "",
       deleteSpeed: 0,
       loop: false,

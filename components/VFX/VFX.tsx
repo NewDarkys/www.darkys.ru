@@ -20,8 +20,8 @@ const VFX: React.FC<VFX> = ({ tag }) => {
       }
       return;
     }
-    me();
-    setInterval(me, (windowMaxHeight + 10) * 5.01);
+    //me();
+    //setInterval(me, (windowMaxHeight + 10) * 5.01);
   });
   return (
     <Tag className="VFX">
