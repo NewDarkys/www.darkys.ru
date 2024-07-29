@@ -12,8 +12,7 @@ const VFX: React.FC<VFX> = ({ tag }) => {
   useEffect(() => {
     let windowMaxHeight = document.documentElement.clientHeight;
     var elem = document.querySelector<HTMLImageElement>(".acryl")!;
-    function me() {}
-    function me1() {
+    function me() {
       for (let i = -50; i < windowMaxHeight + 10; i++) {
         setTimeout(() => {
           elem.style.marginTop = `${i}px`;
