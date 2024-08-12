@@ -7,10 +7,11 @@ import VFX from "@/components/VFX/VFX";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <VFX></VFX>
-      <IntroScene video_src="IntroVideo.mp4"></IntroScene>
-      <LoginPrompt></LoginPrompt>
-      <AboutMe></AboutMe>
+      <VFX />
+      <IntroScene video_src="IntroVideo.mp4" />
+      <LoginPrompt />
+      <AboutMe />
+      
     </main>
   );
 }

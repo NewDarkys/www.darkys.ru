@@ -7,10 +7,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Darkys.ru",
-  description: "Darkys's Portfolio",
+  title: "Darkys.ru | Developer",
+  description: `Hello, I'm Darkys! This is my dev-portfolio. Don't be scared, that's just a "net-art".`,
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
