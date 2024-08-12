@@ -11,7 +11,6 @@ export default function Home() {
       <IntroScene video_src="IntroVideo.mp4" />
       <LoginPrompt />
       <AboutMe />
-      
     </main>
   );
 }
