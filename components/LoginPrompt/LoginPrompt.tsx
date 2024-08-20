@@ -204,11 +204,13 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
       <div className="loginForm">
         <input
           className="usernameInput"
+          autocomplete="off"
           onInput={onUsernameInput}
           placeholder="Username"
         ></input>
         <input
           className="passwordInput"
+          autocomplete="off"
           onInput={onPasswordInput}
           placeholder="Password"
         ></input>
