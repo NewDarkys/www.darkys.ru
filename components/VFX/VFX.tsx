@@ -31,7 +31,7 @@ const VFX: React.FC<VFX> = ({ tag }) => {
 
       <Image
         src="/beam.png"
-        priority={true}
+        priority={false}
         className="effect"
         alt="decor"
         width={"420"}
