@@ -23,24 +23,21 @@ const VFX: React.FC<VFX> = ({ tag }) => {
     //me();
     //setInterval(me, (windowMaxHeight + 10) * 5.01);
   });
-
-  /**
-      <Image
-        src="/beam.png"
-        priority={true}
-        className="effect"
-        alt="decor"
-        width={"420"}
-        height={"237"}
-      ></Image>
-      */
   return (
     <Tag className="VFX">
       <audio src="1Ambient.mp3" className="AmbientAudio"></audio>
       <audio src="1server.mp3" className="serverAudio"></audio>
       <div className="acryl"></div>
+
+      <Image
+        src="/beam.png"
+        priority={true}
+        className="effect"
+        alt="decor"
+        width={"210"}
+        height={"120"}
+      ></Image>
     </Tag>
-    //а сюда имейдж, что выше
   );
 };
 
