@@ -34,8 +34,8 @@ const VFX: React.FC<VFX> = ({ tag }) => {
         priority={true}
         className="effect"
         alt="decor"
-        width={"210"}
-        height={"120"}
+        width={"420"}
+        height={"237"}
       ></Image>
     </Tag>
   );
