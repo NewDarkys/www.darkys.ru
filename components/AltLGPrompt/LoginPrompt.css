@@ -1,0 +1,83 @@
+.LoginPrompt {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(3, 0, 0);
+  background: -moz-linear-gradient(
+    140deg,
+    rgba(3, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    140deg,
+    rgba(3, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    140deg,
+    rgba(3, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030000",endColorstr="#000000",GradientType=1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 3;
+  transition: opacity 0.25s;
+}
+
+.LoginLogo {
+  position: absolute;
+  margin-bottom: 650px;
+}
+
+.hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.LoginLogoText {
+  position: absolute;
+  margin-bottom: 430px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+.loginForm {
+  background-color: rgba(255, 0, 0, 0.11);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.usernameInput,
+.passwordInput {
+  margin: 0px 50px 15px 50px;
+  width: 90%;
+  height: 45px;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  border: none;
+  border-bottom: 2.5px solid;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 700px) {
+  .LoginPrompt .loginForm {
+    height: 350px;
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .LoginPrompt .loginForm {
+    height: 350px;
+    width: 90vw;
+  }
+}

@@ -5,9 +5,10 @@ import Image from "next/image";
 
 interface VFX {
   tag?: keyof JSX.IntrinsicElements;
+  server_src: string;
 }
 
-const VFX: React.FC<VFX> = ({ tag }) => {
+const VFX: React.FC<VFX> = ({ tag, server_src }) => {
   const Tag = tag || "div";
   useEffect(() => {
     let windowMaxHeight = document.documentElement.clientHeight;
@@ -26,7 +27,7 @@ const VFX: React.FC<VFX> = ({ tag }) => {
   return (
     <Tag className="VFX">
       <audio src="1Ambient.mp3" className="AmbientAudio"></audio>
-      <audio src="1server.mp3" className="serverAudio"></audio>
+      <audio src={server_src} className="serverAudio"></audio>
       <div className="acryl"></div>
 
       <Image

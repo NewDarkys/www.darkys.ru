@@ -76,7 +76,7 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
     typewriterNew
       .typeString(
         `
-        ALIEBIOS(C)2024 extraterrestrial SYSTEMS, Inc. <br> SENATA 3.33 D-1707 SCIENCE ACPI BIOS Revision 6633 <br> CPU: Tul17 33-Core Processor <br>   Speed: 3333MHz <br> 
+        ALIEBIOS [C] 2024 extraterrestrial SYSTEMS, Inc. <br> SENATA 3.33 D-1707 SCIENCE ACPI BIOS Revision 6633 <br> CPU: Tul17 33-Core Processor <br>   Speed: 3333MHz <br> 
         <br>
         USB DEVICES TOTAL: 1 Drive, 1 Keyboard, 1 Mouse, 0 Hub
         <br><br>
