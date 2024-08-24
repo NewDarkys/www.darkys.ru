@@ -95,7 +95,7 @@ const LoginPrompt: React.FC<LoginPromptProps> = ({ tag }) => {
   let UsernameCounter = 0;
   let PasswordCounter = 0;
 
-  let Username = "sanya hui sosi";
+  let Username = "Guest";
   let Password = "******";
 
   let startedLogging: boolean;
