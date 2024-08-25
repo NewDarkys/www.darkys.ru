@@ -19,7 +19,7 @@ export default function Home() {
     // const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
     // test.scene.add(boxMesh);
 
-    let loadedModel;
+    let loadedModel: any;
     const glftLoader = new GLTFLoader();
     glftLoader.load("079/scene.gltf", (gltfScene) => {
       loadedModel = gltfScene;
@@ -28,7 +28,9 @@ export default function Home() {
       gltfScene.scene.rotation.y = Math.PI / 8;
       gltfScene.scene.position.y = 3;
       gltfScene.scene.scale.set(10, 10, 10);
-      test.scene.add(gltfScene.scene);
+      if (test.scene) {
+        test.scene.add(gltfScene.scene);
+      }
     });
 
     const animate = () => {
