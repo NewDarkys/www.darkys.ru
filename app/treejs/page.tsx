@@ -34,11 +34,6 @@ export default function Home() {
     });
 
     const animate = () => {
-      if (loadedModel) {
-        loadedModel.scene.rotation.x += 0.01;
-        loadedModel.scene.rotation.y += 0.01;
-        loadedModel.scene.rotation.z += 0.01;
-      }
       requestAnimationFrame(animate);
     };
     animate();
