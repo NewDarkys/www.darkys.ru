@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Darkys.ru | Developer",
-  description: `Hello, I'm Darkys! This is my dev-portfolio. Don't be scared, that's just a "net-art".`,
+  title: "Darkys.ru | 7EYES",
+  description: `"Welcome to 7EYES founded by (Darkys | Даркис)"`,
 };
 export default function RootLayout({
   children,
