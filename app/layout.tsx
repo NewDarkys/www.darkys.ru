@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Darkys.ru | 7EYES",
-  description: `"Welcome to 7EYES founded by (Darkys | Даркис)"`,
+  description: "Welcome to 7EYES founded by (Darkys | Даркис)",
 };
 export default function RootLayout({
   children,

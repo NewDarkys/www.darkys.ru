@@ -7,6 +7,7 @@ import VFX from "@/components/VFX/VFX";
 export default function Home() {
   return (
     <main className={styles.main}>
+      /*
       <div className="dmca_mark">
         <a
           href="//www.dmca.com/Protection/Status.aspx?ID=b2f081e5-0e6f-4143-88ee-81f8954cb4e1"
@@ -26,6 +27,7 @@ export default function Home() {
           {" "}
         </script>
       </div>
+      */
       <VFX server_src="1server.mp3" />
       <IntroScene video_src="IntroVideo.mp4" />
       <LoginPrompt />
