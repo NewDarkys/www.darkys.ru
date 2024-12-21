@@ -7,8 +7,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Darkys.ru | 7EYES",
-  description: "Welcome to 7EYES founded by (Darkys | Даркис)",
+  title: "Darkys.ru | 7EYES - Advanced Anomaly Research",
+  keywords:
+    "анализ аномалий, исследование необъяснимого, Darkys, 7EYES, аномалии, исследования, наука, необъяснимые явления, darkys, даркис, rus_darkys, рус даркис",
+  description:
+    "Welcome to 7EYES founded by (Darkys | Даркис). 7EYES - A leading organization in anomaly research. Explore more on Darkys.ru",
 };
 export default function RootLayout({
   children,
