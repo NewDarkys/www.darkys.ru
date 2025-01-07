@@ -70,7 +70,7 @@ export default function Home() {
         ref={videoRef}
         controls={false}
         className={styles.video}
-        src="jarkim.mp4"
+        src="https://github.com/NewDarkys/www.darkys.ru/raw/refs/heads/master/public/jarkim.mp4"
       ></video>
     </main>
   );
