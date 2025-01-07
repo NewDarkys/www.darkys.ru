@@ -1,0 +1,10 @@
+.video {
+  height: 100vh;
+  width: auto;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}

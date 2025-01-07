@@ -2,7 +2,7 @@
 import "./LoginPrompt.css";
 import Image from "next/image";
 import Typewriter from "typewriter-effect/dist/core";
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 
 interface LoginPromptProps {
   tag?: keyof JSX.IntrinsicElements;
