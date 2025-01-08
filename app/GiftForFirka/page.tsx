@@ -26,7 +26,7 @@ export default function Home() {
       if (video) {
         video.play();
         video.addEventListener("timeupdate", () => {
-          if (video.currentTime >= 27.475 && video.currentTime < 28 && !flag1) {
+          if (video.currentTime >= 26 && video.currentTime < 27.5 && !flag1) {
             flag1 = !flag1;
             video.pause();
           }
