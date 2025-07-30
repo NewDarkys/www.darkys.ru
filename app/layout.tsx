@@ -77,14 +77,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  //<body className={inter.className}>
-       // {children}
-      //  <Analytics />
-    //    <SpeedInsights />
-    //  </body>
-  return (
-    <html lang="ru">
-      <div>Under maintenance</div>
-    </html>
-  );
+  <body className={inter.className}>
+        {children}
+       <Analytics />
+       <SpeedInsights />
+      </body>
+  //return (
+  //  <html lang="ru">
+   //   <div>Under maintenance</div>
+  //  </html>
+ // );
 }
